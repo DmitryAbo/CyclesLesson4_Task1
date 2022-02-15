@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvSource({"'shouldCalculateNumSqrLow0Up100', 0, 100, 0", "'shouldCalculateNumSqrLow99Up10000', 99, 10000, 90"})
+    @CsvSource({"'shouldCalculateNumSqrLow0Up100', 0, 100, 0", "'shouldCalculateNumSqrLow99Up10000', 99, 10000, 90", "'shouldCalculateNumSqrLow200Up300', 200, 300, 3"})
     void shouldCalculateNumSqr(String testName, int lowLimit, int UpLimit, int expected) {
 
         SQRService numSqr = new SQRService();
